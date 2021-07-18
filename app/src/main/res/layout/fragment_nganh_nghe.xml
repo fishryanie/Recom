@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutTong"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_50"
+    android:orientation="vertical"
+    app:layoutDescription="@xml/fragment_top_cong_ty_scene">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_weight="0"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:background="@drawable/header_2"
+        app:contentInsetStart="10dp"
+        app:contentInsetEnd="10dp"
+        android:paddingVertical="10dp"
+        android:id="@+id/tb_NganhNghe">
+
+            <SearchView
+                android:id="@+id/sv_TimNganh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_nensearch"
+                android:iconifiedByDefault="false"
+                android:searchIcon="@drawable/load_logo_search"
+                android:queryBackground="@android:color/transparent"
+                android:queryHint="Nhập ngành nghề">
+            </SearchView>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ListView
+        android:scrollbars="none"
+        android:listSelector="@android:color/transparent"
+        android:id="@+id/lv_XemNganh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#F8F8F8"
+        android:paddingVertical="5dp" />
+
+</LinearLayout>

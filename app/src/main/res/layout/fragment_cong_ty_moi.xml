@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutTong"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_50"
+    android:orientation="vertical"
+    app:layoutDescription="@xml/fragment_top_cong_ty_scene">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_weight="0"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:background="@drawable/header_2"
+        app:contentInsetStart="10dp"
+        app:contentInsetEnd="10dp"
+        android:paddingVertical="10dp"
+        android:id="@+id/tb_NganhNghe">
+
+        <SearchView
+            android:id="@+id/sv_TimNganh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_nensearch"
+            android:iconifiedByDefault="false"
+            android:searchIcon="@drawable/load_logo_search"
+            android:queryBackground="@android:color/transparent"
+            android:queryHint="Nhập tên công ty">
+        </SearchView>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:background="@color/white"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:id="@+id/btn_ThemCongTy"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_style4"
+            android:gravity="center"
+            android:drawableLeft="@drawable/ic_add"
+            android:paddingHorizontal="10dp"
+            android:text="THÊM ĐỀ XUẤT"
+            android:textColor="@color/white" />
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:id="@+id/btn_XoaCongTy"
+            style="?android:attr/borderlessButtonStyle"
+            android:drawableLeft="@drawable/ic_remove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_style5"
+            android:gravity="center"
+            android:paddingHorizontal="15dp"
+            android:text="HỦY ĐỀ XUẤT"
+            android:textColor="@color/green_blue" />
+
+    </LinearLayout>
+
+    <ListView
+        android:scrollbars="none"
+        android:listSelector="@android:color/transparent"
+        android:id="@+id/lv_CongTyMoi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#F8F8F8"
+        android:paddingVertical="5dp">
+
+    </ListView>
+
+</LinearLayout>

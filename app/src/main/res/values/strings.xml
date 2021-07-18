@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Recom</string>
+    <string name="example_content">
+        Mình muốn viết ra những dòng sau đây, với mong muốn cảnh tỉnh các bạn sinh viên như mình, muốn
+        đăng ký chương trình Fresher của Fsoft HCM, Fresher Academy (FA). Mình cũng cùng như tâm lý
+        như các bạn, mới ra trường, tự ti vào khả năng code của mình.
+    </string>
+
+    <string name="API_getall">"http://192.168.1.3:8000/user/getall"</string>
+    <string name="API_getFavorite">http://192.168.1.3:8000/user/getFavorite</string>
+
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="10dp"
+    android:background="@color/white"
+    android:paddingVertical="10dp">
+
+    <ImageView
+        android:id="@+id/img_Icon"
+        android:layout_width="20dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0"
+        app:srcCompat="@drawable/ic_dn_name" />
+
+    <TextView
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:layout_marginLeft="16dp"
+        android:gravity="left|center"
+        android:id="@+id/txt_TenTruong"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_weight="0"
+        android:text="Họ tên" />
+
+    <EditText
+        android:layout_marginLeft="10dp"
+        android:gravity="right|center"
+        android:background="#00FFFFFF"
+        android:textSize="15sp"
+        android:id="@+id/edt_NoiDung"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="Họ tên"
+        android:inputType="text"
+        android:text="Đặng Hoàng Huy" />
+</LinearLayout>

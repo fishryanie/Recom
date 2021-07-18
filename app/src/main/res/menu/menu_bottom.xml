@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/topcongty"
+        android:title="Top công ty"
+        android:icon="@drawable/ic_menu_top"/>
+    <item android:id="@+id/nganhnghe"
+        android:title="Ngành nghề"
+        android:icon="@drawable/ic_menu_nganh"/>
+    <item android:id="@+id/congtymoi"
+        android:title="Công ty mới"
+        android:icon="@drawable/ic_menu_moi" />
+    <item android:id="@+id/taikhoan"
+        android:title="Tài khoản"
+        android:icon="@drawable/ic_menu_taikhoan"/>
+</menu>
